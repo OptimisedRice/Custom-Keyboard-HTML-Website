@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Custom Mechanical Keyboard 101">
+        <meta name="keywords" content="HTML5, CSS3, JavaScript, Keyboard, Custom, Mechanical, Switches, QWERTY, Guide, MechanicalKeyboards">
+        <meta name="author" content="Kieran Silada">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Custom MKeyboards 101</title>
+        <link rel="stylesheet" href="Assets/CSS/site.css">
+        <script src="Assets/Scripts/script.js"></script>
+    </head>
+
+    <body id="bg" onload="rotator();">
+        <div id="main1">
+            <header id="navbar">
+                <nav>  
+                    <ul id="nav">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a class="active" href="switches.html">Switches</a></li>
+                        <li><a href="parts.html">Parts</a></li>
+                        <li><a href="mykb.html">My Keyboard</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <hr>
+            </header>
+            
+            <!-- content section -->
+            <div id="main2">
+                <section>
+                    <h2>Switches</h2>
+                    <p>
+                        To start things off, switches are very important, if not the most important, aspect to consider when choosing a keyboard. Afterall it is what reads your key input and what you feel in your
+                        fingertips as well as what you even hear. Generally speaking there are two types of switches -
+                    </p>
+                    <ol>
+                        <li>Membrane</li>
+                        <li>Mechanical</li>
+                    </ol>
+                </section>
+
+                <div class="inline">
+                    <p>
+                        1. Your average keyboard will be membrane which consists of a keycap and a rubber dome underneath that presses into a circuit. It works the same as your tv remote does and subsequently feels "mushy" or "squishy".
+                    </p>
+                    <img src="Assets/Images/membrane.gif" alt="membrane" />
+
+                    <p>
+                        2. On the other hand, mechanical switches are objectively more responsive and "tactile". It utilises metal leaves, a spring and a stem to separate the leaves. Additionally, there are types that use magnets and lasers but for our custom needs, the leaves are more than enough.
+                    </p>
+                    <img src="Assets/Images/mechanical.gif" alt="mechanical" />
+                </div>
+
+                <div>
+                    <p>
+                        Mechanical switches are the obvious choice and do have a bigger appeal in the custom mechanical keyboard world. There is a lot more modularity to it with its subtypes and hot-swappability. You can have silent linear switches, loud clicky ones and also tactile ones. There really isn't one that's the best. It's all up to the individual!
+                    </p>
+                </div>
+
+                <section>
+                    <h2>Types</h2>
+                    <p>There are 3 types of mechanical switches:</p>
+                </section>
+                <br>
+                <div id="cards">
+                    <div class="card">
+                        <h3>Linear</h3>
+                        <ul>
+                            <li>smooth feel from top to bottom</li>
+                            <li>actuation point and release are the same</li>
+                            <li>typical "gamer" switch</li>
+                        </ul>
+                        <div>
+                            <img src="Assets/Images/linear.gif" alt="linear" />    
+                        </div>
+                        <audio controls="controls"><source src="Assets/Sound/linear.wav" type="audio/mpeg" /></audio>
+                    </div>
+
+                    <div class="card">
+                        <h3>Tactile</h3>
+                        <ul>
+                            <li>small tactile bump on actuation</li>
+                            <li>actuation point and release are close</li>
+                            <li>between "gamer" and "typist"</li>
+                        </ul>
+                        <div>
+                            <img src="Assets/Images/tactile.gif" alt="tactile" />    
+                        </div>
+                        <audio controls="controls"><source src="Assets/Sound/tactile.wav" type="audio/mpeg" /></audio>
+                    </div>
+
+                    <div class="card">
+                        <h3>Clicky</h3>
+                        <ul>
+                            <li>loud click and tactile bump on actuation</li>
+                            <li>release above actuation point</li>
+                            <li>suitable for "typists"</li>
+                        </ul>
+                        <div>
+                            <img src="Assets/Images/clicky.gif" alt="clicky" />    
+                        </div>
+                        <audio controls="controls"><source src="Assets/Sound/clicky.wav" type="audio/mpeg" /></audio>
+                    </div>
+                </div> 
+
+                <div>
+                    <p>
+                        Each one have their own appeal with nothing more than quality and feel that set switch to switch apart. There are many different manufacturers and switch recommendations are widely available. Here are just 3 highly recommended switches for their respective subtype.
+                    </p>  
+                </div>  
+
+                <div id="recommendations">
+                    <a id="link" href="https://novelkeys.xyz/products/novelkeys-cream-switches"><img id="picture" src="Assets/Images/linearrec.jpg" alt="recommendations" /></a>
+                    <br>
+                    <label id="description">Novelkeys Creams (linear)</label>
+                    <br>
+                    <button onclick="change_picture()">Next</button>
+                </div>
+
+                <section class="inline">
+                    <h4>Lubing</h4>
+                    <p>
+                        Additionally the stock switches can be further improved upon by using industry-grade lube. By applying lube to the inner parts of the switches, a better feel and sound can be achieved. Less friction between contact points can reduce the feeling of "scratching" when two surfaces rub off each other. The spring can cause a pinging noise upon switch release which can be mitigated with lube. There are a lot of different lubes available out there with some suited for linears as opposed to tactile. This can be from its thickness or base type. Recommended companies are Krytox and Tribosys A small fine-tip brush is recommended for application of the lube onto the surfaces.
+                    </p>
+                    <img src="Assets/Images/lube.jpeg" alt="lube" />
+                </section>
+                           
+            </div>
+            
+
+            <!-- end content section-->
+            <hr>
+            <footer>Site by: Kieran Silada 2020</footer>
+        </div>
+    </body>
+</html>

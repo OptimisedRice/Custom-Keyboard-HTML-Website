@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Custom Mechanical Keyboard 101">
+        <meta name="keywords" content="HTML5, CSS3, JavaScript, Keyboard, Custom, Mechanical, Switches, QWERTY, Guide, MechanicalKeyboards">
+        <meta name="author" content="Kieran Silada">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Custom MKeyboards 101</title>
+        <link rel="stylesheet" href="Assets/CSS/site.css">
+        <script src="Assets/Scripts/script.js"></script>
+    </head>
+
+    <body id="bg" onload="rotator();">
+        <div id="main1">
+            <header id="navbar">
+                <nav>  
+                    <ul id="nav">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="switches.html">Switches</a></li>
+                        <li><a href="parts.html">Parts</a></li>
+                        <li><a href="mykb.html">My Keyboard</a></li>
+                        <li><a class="active" href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <hr>
+            </header>
+
+            <!-- content section -->
+            <div id="contact">
+                <h3>Contact Me</h3>
+
+                <form action="server-script-url" name="regForm" onsubmit="return( validate() );">
+                    <div>
+                        <label>First Name:*</label><label class="errorMessage" id="firstnameMessage"></label>
+                        <input type="text" class="generalInput" name="firstname">
+                    </div>
+
+                    <div>
+                        <label>Last Name:*</label><label class="errorMessage" id="lastnameMessage"></label>
+                        <input type="text" class="generalInput" name="lastname">
+                    </div>
+
+                    <div>
+                        <label>Email:</label>
+                        <input type="email" class="generalInput" name="email">
+                    </div>
+
+                    <div>
+                        <label>Gender:</label><br>
+                        <input type="radio" name="gender" value="male">
+                        <label>Male</label>
+                        <br>
+                        <input type="radio" name="gender" value="female">
+                        <label>Female</label>
+                        <br>
+                        <input type="radio" name="gender" value="other" checked>
+                        <label>Other:</label>
+                            <input type="text" name="gender_category">
+                    </div>
+
+                    <div>
+                        <label>Preferred Switch Type?</label>
+                        <select class="generalInput">
+                            <option value="linear">Linear</option>
+                            <option value="tactile">Tactile</option>
+                            <option value="clicky">Clicky</option>
+                        </select><br>
+                    </div>
+
+                    <div>
+                        <label>Message:*</label><label class="errorMessage" id="textMessage"></label>
+                        <textarea class="generalInput" id="message" name="message"></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <!-- end content section-->
+            <hr>
+            <footer>Site by: Kieran Silada 2020</footer>
+        </div>
+    </body>
+</html>

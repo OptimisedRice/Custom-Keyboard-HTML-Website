@@ -1,0 +1,290 @@
+#navbar {
+    top: 0;
+}
+
+#main1 {
+    background: #494949f3;
+    margin: 0px;
+    min-height: 1000px;
+    padding: 10px;
+    width: 70%;
+    margin: auto;
+}
+
+#main2 {
+    padding: 3%;
+    width: 95%;
+    margin: auto;
+}
+
+#bg {
+    background: #2e2e2e;
+    color: white;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    margin: auto;
+    font-size: 1.25vw;
+    background-image: url('../Images/back1.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#nav {
+    text-align: center;
+    margin: auto;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;  
+}
+
+#nav li {
+    display: inline-block;
+}
+
+#nav li a {
+    font-size: 1.25rem;
+    display: block;
+    color: rgba(255, 255, 255, 0.459);
+    text-align: center;
+    padding: 2rem 5rem;
+    text-decoration: none;
+}
+
+a:active {
+    color: black;
+} 
+
+a:hover {
+    border-bottom: 3px solid rgb(255, 255, 255);
+}
+
+.active {
+    color: white;
+}
+
+footer {
+    margin: 10px;
+    color: white;
+    text-align: center;
+    font-size: 0.75rem;
+}
+
+#kieran {
+    width: 15%;
+}
+
+.inline {
+    margin: auto;
+    margin: 10px;
+    width: 100%;
+}
+
+.inline img {
+    width: 15%;
+    display: inline-block;
+    margin: 6px;
+    border-radius: 5%;
+}
+
+.inline p {
+    width: 80%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 1px;
+}
+
+table img {
+    width: 95%;
+    padding: 3px;
+}
+
+.card div {
+    width: 100%;
+}
+
+.card img {
+    padding-left: 20%;
+    margin: auto;
+    width: 60%;
+}
+  
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    vertical-align: top;
+    background: rgb(121, 121, 121);
+    padding: 1rem;
+    margin: 0px;
+}
+
+.card h3 {
+    margin: 5px;
+}
+
+#cards {
+    height: auto;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 2vh;
+}
+
+audio {
+    margin: auto;
+}
+
+#recommendations {
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 1vw;
+}
+
+#picture {
+    width: 33%;;
+}
+
+#description {
+    text-align: center;
+}
+
+#kb {
+    width: 30%;
+}
+
+#kbds {
+    width: 65%;
+    font-size: 1.2rem;
+}
+
+#lube {
+    width: 65%;
+}
+
+#mykb {
+    width: 35%;
+    margin: auto;
+}
+
+#end {
+    text-align: center;
+}
+
+#guide iframe {
+    width: 30vw;
+    height: 32vh;
+    border: 0;
+}
+
+#guide {
+    text-align: center;
+    margin: auto;
+}
+
+.generalInput {
+    width: 100%;
+    display: block;
+    border: 1px grey solid;
+    height: 2vh;
+    margin-bottom: 3vh;
+}
+
+form div {
+    vertical-align: center;
+    width: 70%;
+    font-size: 1.3vw;
+    font-weight: bold;
+    margin: 1vw;
+}
+
+#contact {
+    width: 50%;;
+    height: fit-content;
+    margin: auto;
+    background-color: rgba(116, 116, 116, 0.644);
+    padding: 2vw;
+} 
+
+#message {
+    height: 100px;
+    resize: none;
+}
+
+form label {
+    font-size: 1.35rem;
+}
+
+.errorMessage {
+    color: rgb(226, 19, 19);
+    font-size: 1.1rem;
+}
+
+audio {
+    width: 100%;
+}  
+
+    @media screen and (min-width: 1px) and (max-width: 900px) {
+                                                       
+    #cards {                                                                
+        display: block;
+    }
+
+    .card {
+        display: unset;
+        flex-direction: unset;
+        background: rgba(121, 121, 121, 0);
+    }
+    
+    tr {
+        display: block;
+        float: left;
+    }
+    td {
+        display: block;
+        height: fit-content;
+    }
+
+    #main2 {
+        font-size: 5vw;
+    }
+
+    #main1 {
+        margin: auto;
+        width: 100%;
+        min-height: 2000px;
+    }
+
+    .card {
+        width: 25vw;
+    }
+
+    #guide iframe {
+        width: 100%;
+    }
+    
+    #contact {
+        font-size: 50px;
+        width: 75%;
+    }
+
+    .generalInput {
+       width: 80%;
+    }
+
+    form div {
+        font-size: 85px;
+    }
+
+    .inline img {
+        width: 80%;
+        display: block;
+    }
+
+    .inline p {
+        display: block;
+    }
+
+}
